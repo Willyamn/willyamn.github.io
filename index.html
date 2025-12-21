@@ -146,6 +146,19 @@ System Support, Technical Support, Software Engineering Graduate
         <i class="fas fa-envelope"></i>
     </a>
 </div>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector('.contact-form');
+
+    form.addEventListener('submit', function(event) {
+        // Let Formspree handle submission
+        setTimeout(() => {
+            form.reset(); // Clear all fields after submission
+        }, 500);
+    });
+});
+    </script>
+    
     
 
 </body>
